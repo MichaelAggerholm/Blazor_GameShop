@@ -28,4 +28,11 @@ Jeg har benyttet mig af Github til versionskontrol, da det er et gratis værktø
 Microsoft.AspNetCore.Cors library integreret i web api, for at kunne håndtere CORS (Cross-Origin Resource Sharing) requests.
 På den måde kan blazor klienten kommunikere med web api serveren.
 
+## Code-behind separation
+Adskiller præsentationslaget fra logikken for komponenten.
+Adskillelse hjælper med at forbedre vedligeholdelsen af koden ved at adskille UI-ansvar fra logikken i komponenten. Det hjælper også med at forbedre læsbarheden af koden ved at gøre det nemmere at finde og forstå logikken bag komponentens adfærd.
 
+## CSS-behind separation
+For at adskille styling fra komponentens logik og struktur. Ved at opdele CSS-koden i en separat fil kan man holde koden mere organiseret og letlæselig.
+CSS-separation hjælper også med at forhindre stilinterferens eller -konflikter mellem forskellige komponenter eller dele af applikationen. Det gør det muligt at definere styling specifikt for en bestemt komponent, uden at det påvirker resten af applikationen.
+CSS-separation også give mulighed for at genbruge styling på tværs af flere komponenter eller applikationer, da CSS-filen kan importeres og bruges flere steder.

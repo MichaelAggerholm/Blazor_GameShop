@@ -149,3 +149,39 @@ main[b-i85fwp3lcr] {
         overflow-y: auto;
     }
 }
+/* /Shared/ProductList.razor.rz.scp.css */
+body[b-gtjo7adxxp] {
+
+}
+
+.media-img[b-gtjo7adxxp] {
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: transform .2s;
+}
+
+    .media-img:hover[b-gtjo7adxxp] {
+        transform: scale(1.1);
+    }
+
+.media-img-wrapper[b-gtjo7adxxp] {
+    width: 200px;
+    text-align: center;
+}
+
+.price[b-gtjo7adxxp] {
+    color: green;
+}
+
+@media (max-width: 1023.98px) {
+    .media[b-gtjo7adxxp] {
+        flex-direction: column;
+    }
+
+    .media-img-wrapper[b-gtjo7adxxp] {
+        width: 100%;
+        height: auto;
+    }
+}

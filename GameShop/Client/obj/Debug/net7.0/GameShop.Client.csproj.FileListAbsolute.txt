@@ -834,3 +834,4 @@ C:\Users\92agg\source\repos\GameShop\GameShop\Client\obj\Debug\net7.0\build-gz\E
 C:\Users\92agg\source\repos\GameShop\GameShop\Client\obj\Debug\net7.0\build-gz\MuGOPOxQ.gz
 C:\Users\92agg\source\repos\GameShop\GameShop\Client\obj\Debug\net7.0\build-gz\JBgKIIa+.gz
 C:\Users\92agg\source\repos\GameShop\GameShop\Client\obj\Debug\net7.0\build-gz\RqYnU3a5.gz
+C:\Users\92agg\source\repos\GameShop\GameShop\Client\obj\Debug\net7.0\scopedcss\Shared\ProductList.razor.rz.scp.css
