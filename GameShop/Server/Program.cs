@@ -1,7 +1,7 @@
 global using GameShop.Shared;
-using GameShop.Server.Data;
-using Microsoft.AspNetCore.ResponseCompression;
-using Microsoft.EntityFrameworkCore;
+global using GameShop.Server.Data;
+global using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +13,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("UsersDb"));
+builder.Services.AddSqlite<DataContext>("Data Source=GameShopDb.db");
 
 var app = builder.Build();
 
@@ -39,7 +39,6 @@ app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 
 app.UseRouting();
-
 
 app.MapRazorPages();
 app.MapControllers();
