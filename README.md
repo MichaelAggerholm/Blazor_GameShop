@@ -66,6 +66,18 @@ Når udviklingsprocessen er afsluttet, benyttes EF-core til at oprette og migrer
 Jeg har benyttet mig af Entity Framework Core til at håndtere kommunikationen mellem databasen og serveren.
 Som database har jeg valgt SQLite integreret database i solution "GameShopDb.db", det gøres nemt ved at lave en migration, derefter migrere den.
 
+## Code-first migration
+
+Jeg benytter code-first migration tilgangen til databaseudvikling, det går ud på at jeg først definere min datamodel i koden, og derefter benytter entity framework core til at genere en database ud fra min model. Det giver mig en række fordele under udviklingen, som blandt andet disse punkter:
+
+Hurtig og effektiv udvikling: Med code-first migration kan du hurtigt oprette og ændre din database ved at redigere dine modeller i kode. Dette gør det nemmere at tilføje eller ændre funktionalitet, da du kan opdatere dit datamodel og opdatere din database med et enkelt kommando.
+
+Versionering af databasen: Ved at anvende code-first migration kan du versionere din database og sikre, at alle i dit team har den samme version af databasen. Dette gør det nemmere at samarbejde og sikre, at alle har den samme forståelse af, hvordan databasen er struktureret.
+
+Fleksibilitet: Code-first migration giver dig mulighed for at arbejde med en bred vifte af databaser og understøtter flere forskellige databaseteknologier. Det betyder, at du kan vælge den database, der passer bedst til dit projekt, og at du kan ændre databaseplatformen senere, hvis det er nødvendigt.
+
+Produktivitet: Code-first migration kan hjælpe dig med at øge din produktivitet ved at reducere mængden af ​​kode, du skal skrive, og ved at give dig mulighed for at fokusere på at udvikle applikationen, i stedet for at skrive manuelle SQL-scripts.
+
 ## Github versionskontrol
 
 Jeg har benyttet mig af Github til versionskontrol, da det er et gratis værktøj, som er nemt at bruge og giver mulighed for at dele koden med andre.
