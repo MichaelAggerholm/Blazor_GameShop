@@ -88,6 +88,16 @@ Produktivitet: Code-first migration kan hjælpe dig med at øge din produktivite
 
 Jeg har benyttet mig af Github til versionskontrol, da det er et gratis værktøj, som er nemt at bruge og giver mulighed for at dele koden med andre.
 
+## .Net linter
+
+Kvalitetssikring: Linteren vil hjælpe dig med at opretholde en høj kvalitet af koden i dit projekt ved at identificere eventuelle kodestilfejl, manglende semikolon eller fejl i logikken. Ved at udføre disse checks hver gang der laves en pull eller push request til og fra master branchen, kan du undgå at integrere fejl og mangler i dit kodebase.
+
+Konsistens: Linteren vil hjælpe dig med at opretholde konsistent kodestil på tværs af dit projekt, da det vil identificere eventuelle afvigelser fra de definerede standarder.
+
+Samarbejde: GitHub Action .NET-linteren kan hjælpe med at lette samarbejdet mellem udviklere i dit team, da det sikrer, at koden følger de samme standarder og stil, hvilket kan gøre det lettere for andre udviklere at forstå og vedligeholde koden.
+
+Samlet set kan brugen af GitHub Action .NET-linteren hjælpe dig med at opretholde en høj kvalitet af koden i dit projekt, øge effektiviteten, sikre konsistent kodestil og fremme samarbejdet mellem udviklere i dit team.
+
 ## Microsoft.AspNetCore.Cors
 
 Microsoft.AspNetCore.Cors library integreret i web api, for at kunne håndtere CORS (Cross-Origin Resource Sharing) requests.
