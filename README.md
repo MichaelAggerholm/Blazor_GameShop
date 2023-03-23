@@ -53,6 +53,16 @@ Derudover kan InputValidation også hjælpe med at overholde forskellige sikkerh
 
 Sammenfattende kan InputValidation hjælpe med at sikre, at applikationen fungerer som den skal, og at brugerdata er beskyttet mod angreb og manipulation.
 
+## In-memory database (Udviklingsmiljø)
+
+Dette giver udviklere mulighed for at teste og validere applikationens funktionalitet uden at skulle oprette og administrere en ægte database. Dette kan spare tid og ressourcer og gøre det lettere at finde og rette fejl i koden.
+
+En in-memory database fungerer ved at lagre data i hukommelsen i stedet for på en fysisk disk. Dette gør det muligt at simulere en rigtig database, men uden at skulle oprette og vedligeholde en faktisk database. Der er forskellige in-memory database-løsninger, som kan bruges i Blazor WebAssembly-apps, såsom SQLite eller Microsofts Entity Framework Core In-Memory Database Provider.
+
+Når udviklingsprocessen er afsluttet, benyttes EF-core til at oprette og migrere til en mssql database i stedet, her til skal der installeres en nuget pakke.
+
+HER BØR NOK ANVENDES SQLITE FRA STARTEN I STEDET FOR AT BENYTTE IN-MEMORY! blot en not, jeg benytter det her, da det er et "hjemme" projekt udelukkende for læring af blazor, her til er in-memory dejlig hurtigt at arbejde med.
+
 ## Entity Framework Core
 
 Jeg har benyttet mig af Entity Framework Core til at håndtere kommunikationen mellem databasen og serveren.
@@ -117,3 +127,19 @@ Når det kommer til Blazor WebAssembly-apps, er Swagger især nyttig, fordi det 
 Swagger kan også bruges til at validere API-anmodninger og svar i henhold til API-specifikationerne og hjælpe med at identificere eventuelle fejl eller problemer. Dette kan bidrage til at forbedre kvaliteten og pålideligheden af API'en og reducere tiden, der bruges på at fejlfinde.
 
 Samlet set gør Swagger det nemt for udviklere at designe, dokumentere og teste deres API'er på en standardiseret måde, som kan føre til mere effektiv og pålidelig softwareudvikling.
+
+## Repository Pattern
+
+Repository pattern er en arkitektonisk designmodel, der bruges til at abstrahere adgangen til datakilder fra applikationslogikken. Ved at adskille adgangen til datakilder fra applikationslogikken bliver applikationen mere modulær og lettere at vedligeholde og teste.
+
+I Repository pattern oprettes der en service, der fungerer som en abstraktion af datakilden. Denne service udfører CRUD-operationer på datakilden og gemmer eller henter dataene som objekter. Applikationslogikken kommunikerer med disse services eller klasser i stedet for at interagere direkte med datakilden.
+
+Fordelene ved Repository pattern inkluderer:
+
+Bedre adskillelse af ansvar: Repository pattern adskiller adgangen til datakilden fra applikationslogikken, hvilket gør det lettere at vedligeholde og teste applikationen.
+Mere fleksibilitet: Repository pattern gør det muligt at skifte datakilden uden at skulle ændre applikationslogikken.
+Lettere at teste: Repository pattern gør det muligt at teste applikationslogikken uden at skulle interagere med den faktiske datakilde.
+
+## Sikkerhed
+
+Grundet projektet størrelse, vil det ikke påvirke ydeevnen at benytte guid frem for normalt id til produkter, dog øger det sikkerheden da det er sværere at forudsige og manipulere dem.
