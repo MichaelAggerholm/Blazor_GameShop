@@ -1,3 +1,9 @@
+[![.NET](https://github.com/MichaelAggerholm/Blazor_GameShop/actions/workflows/dotnet.yml/badge.svg)](https://github.com/MichaelAggerholm/Blazor_GameShop/actions/workflows/dotnet.yml)
+
+# GameShop
+
+Webshom lavet i blazor web assembly som personlig udviklings projekt.
+
 # Projekt noter
 
 ## .NET Core 7.0
