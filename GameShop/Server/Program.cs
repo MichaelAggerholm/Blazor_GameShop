@@ -17,8 +17,6 @@ builder.Services.AddSqlite<DataContext>("Data Source=GameShopDb.db");
 
 var app = builder.Build();
 
-
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
