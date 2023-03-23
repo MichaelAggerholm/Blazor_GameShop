@@ -73,6 +73,8 @@ Adskillelse hjælper med at forbedre vedligeholdelsen af koden ved at adskille U
 
 ## CSS-behind separation
 
+(Afventer lige.. benytter ikke p.t code-behind alligevel.)
+
 For at adskille styling fra komponentens logik og struktur. Ved at opdele CSS-koden i en separat fil kan man holde koden mere organiseret og letlæselig.
 CSS-separation hjælper også med at forhindre stilinterferens eller -konflikter mellem forskellige komponenter eller dele af applikationen. Det gør det muligt at definere styling specifikt for en bestemt komponent, uden at det påvirker resten af applikationen.
 CSS-separation også give mulighed for at genbruge styling på tværs af flere komponenter eller applikationer, da CSS-filen kan importeres og bruges flere steder.
@@ -83,8 +85,35 @@ CSS-separation også give mulighed for at genbruge styling på tværs af flere k
 
 ## Dependency Injection (DI) ??
 
-??
+?? mere
+Der anvendes blandt andet blazor injection i ProductList.razor, her injectes HttpClient, for at vise data fetched fra http request.
 
-## SOLID-principperne
+## SOLID-principperne ?
+
+Single Responsibility Principle, Open/Closed Principle, Liskov Substitution Principle, Interface Segregation Principle, Dependency Inversion Principle
 
 ?? Bliver de brugt i denne kode, eller bør man ikke nævne det ??
+
+NOTE:
+
+SOLID-principperne er en række designprincipper til objektorienteret programmering, der sigter mod at gøre koden mere modulær, fleksibel og genanvendelig. Disse principper er uafhængige af applikationsarkitekturen, og de kan anvendes i enhver type applikation, inklusive Blazor WebAssembly-projekter.
+
+For at overholde SOLID-principperne kan Blazor-kode opdeles i separate moduler eller komponenter, der har en enkelt ansvar og er nemme at vedligeholde og genbruge.
+
+## REST Api principperne ?
+
+NOTE:
+
+REST-principperne, derimod, er en arkitektonisk stil til udvikling af webapplikationer, der bygger på HTTP-protokollen og består af en række principper for at designe API'er, der er nemme at bruge og vedligeholde. REST-principperne fokuserer på at bruge HTTP-verbene på en standardiseret måde for at skabe en ensartet grænseflade til API'en.
+
+Blazor WebAssembly-projekter kan følge REST-principperne ved at oprette en API, der bruger standardiserede HTTP-verb til at udføre CRUD-operationer (oprette, læse, opdatere og slette) på data.
+
+## Swagger integration
+
+Swagger er et open-source værktøj, der bruges til at designe, dokumentere og teste API'er. Det gør det nemt for udviklere at oprette en interaktiv dokumentation af deres API'er, der beskriver, hvordan API'en fungerer, og hvordan man bruger den.
+
+Når det kommer til Blazor WebAssembly-apps, er Swagger især nyttig, fordi det kan integreres direkte i appen og bruges til at teste API-kald i realtid. Dette betyder, at udviklere kan teste deres API'er og se resultatet øjeblikkeligt, uden at skulle oprette en separat testklient eller deployere appen til en server.
+
+Swagger kan også bruges til at validere API-anmodninger og svar i henhold til API-specifikationerne og hjælpe med at identificere eventuelle fejl eller problemer. Dette kan bidrage til at forbedre kvaliteten og pålideligheden af API'en og reducere tiden, der bruges på at fejlfinde.
+
+Samlet set gør Swagger det nemt for udviklere at designe, dokumentere og teste deres API'er på en standardiseret måde, som kan føre til mere effektiv og pålidelig softwareudvikling.

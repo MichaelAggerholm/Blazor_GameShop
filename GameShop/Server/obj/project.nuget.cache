@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dWND8kE+Zhr9qoalNg94Tune+gotxANs+6PLx1xUq+TCbXgun/I5FGb0ZEo+wS7n8ITczueD/TL9VQlMy9TMLw==",
+  "dgSpecHash": "7G+Phii9ZlO8ycydXx9FD7PO9ewXpSG71NRl43iIAs6xnm/IsyLg8YKieZL/QTdNOlL6fgqXhbae1iqlR6K98Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Server\\GameShop.Server.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.4\\microsoft.aspnetcore.components.webassembly.7.0.4.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.server\\7.0.4\\microsoft.aspnetcore.components.webassembly.server.7.0.4.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.4\\microsoft.aspnetcore.metadata.7.0.4.nupkg.sha512",
+    "C:\\Users\\92agg\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.4\\microsoft.extensions.configuration.binder.7.0.4.nupkg.sha512",
@@ -29,9 +30,14 @@
     "C:\\Users\\92agg\\.nuget\\packages\\microsoft.jsinterop\\7.0.4\\microsoft.jsinterop.7.0.4.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.4\\microsoft.jsinterop.webassembly.7.0.4.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\92agg\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
+    "C:\\Users\\92agg\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\92agg\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\92agg\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\92agg\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\92agg\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"

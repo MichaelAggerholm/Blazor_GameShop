@@ -1,9 +1,11 @@
-﻿using GameShop.Shared;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
-namespace GameShop.Client.Shared
+namespace GameShop.Server.Controllers
 {
-
-    public partial class ProductList
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ProductController : ControllerBase
     {
         private static List<Product> Products = new List<Product>
         {
@@ -32,5 +34,12 @@ namespace GameShop.Client.Shared
                 Price = 6.99m
             }
         };
+
+
+        [HttpGet]
+        public async Task<IActionResult> GetProduct()
+        {
+            return Ok(Products);
+        }
     }
 }
