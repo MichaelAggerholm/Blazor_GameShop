@@ -59,13 +59,12 @@ Dette giver udviklere mulighed for at teste og validere applikationens funktiona
 
 En in-memory database fungerer ved at lagre data i hukommelsen i stedet for på en fysisk disk. Dette gør det muligt at simulere en rigtig database, men uden at skulle oprette og vedligeholde en faktisk database. Der er forskellige in-memory database-løsninger, som kan bruges i Blazor WebAssembly-apps, såsom SQLite eller Microsofts Entity Framework Core In-Memory Database Provider.
 
-Når udviklingsprocessen er afsluttet, benyttes EF-core til at oprette og migrere til en mssql database i stedet, her til skal der installeres en nuget pakke.
-
-HER BØR NOK ANVENDES SQLITE FRA STARTEN I STEDET FOR AT BENYTTE IN-MEMORY! blot en not, jeg benytter det her, da det er et "hjemme" projekt udelukkende for læring af blazor, her til er in-memory dejlig hurtigt at arbejde med.
+Når udviklingsprocessen er afsluttet, benyttes EF-core til at oprette og migrere til en sqlite database i stedet, her til skal der installeres en nuget pakke til at benytte sqlite.
 
 ## Entity Framework Core
 
 Jeg har benyttet mig af Entity Framework Core til at håndtere kommunikationen mellem databasen og serveren.
+Som database har jeg valgt SQLite integreret database i solution "GameShopDb.db", det gøres nemt ved at lave en migration, derefter migrere den.
 
 ## Github versionskontrol
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AyA7Hum7+Ryiy7GgwAx9QFc85wI6UHVnaWxtYDLsiOc=",
+  "Hash": "fYfSbnvMPt8IuR00M9aTG5Uj4oIz4vcXEW0sliUUp2c=",
   "Source": "GameShop.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -170,23 +170,6 @@
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Shared\\bin\\Debug\\net7.0\\GameShop.Shared.pdb"
     },
     {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.4\\runtimes\\browser-wasm\\native\\icudt.dat"
-    },
-    {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "GameShop.Client",
       "SourceType": "Computed",
@@ -236,6 +219,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.4\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.4\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -7021,6 +7021,23 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "GameShop.Client",
       "SourceType": "Discovered",
@@ -7121,23 +7138,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
