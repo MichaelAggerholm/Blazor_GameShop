@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KpdWKgYGxhmS07bhA9kDh0+orzf+6Yg6N+8GfkuAGLY=",
+  "Hash": "AyA7Hum7+Ryiy7GgwAx9QFc85wI6UHVnaWxtYDLsiOc=",
   "Source": "GameShop.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -48,7 +48,7 @@
       "AssetTraitValue": "boot",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.0\\build\\net7.0\\blazor.webassembly.js"
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.4\\build\\net7.0\\blazor.webassembly.js"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\dotnet.7.0.4.rny1o5jmhn.js",
@@ -252,7 +252,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.4\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -269,7 +269,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.4\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -286,7 +286,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Components.Forms.dll"
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.4\\lib\\net7.0\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
@@ -303,7 +303,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Components.Web.dll"
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.4\\lib\\net7.0\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
@@ -320,7 +320,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.4\\lib\\net7.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
@@ -337,7 +337,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.4\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -388,7 +388,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Configuration.Binder.dll"
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.4\\lib\\net7.0\\Microsoft.Extensions.Configuration.Binder.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.dll",
@@ -575,7 +575,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Options.dll"
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\lib\\net7.0\\Microsoft.Extensions.Options.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
@@ -609,7 +609,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.jsinterop\\7.0.0\\lib\\net7.0\\Microsoft.JSInterop.dll"
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.jsinterop\\7.0.4\\lib\\net7.0\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
@@ -626,7 +626,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.0\\lib\\net7.0\\Microsoft.JSInterop.WebAssembly.dll"
+      "OriginalItemSpec": "C:\\Users\\92agg\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.4\\lib\\net7.0\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll",
@@ -3519,6 +3519,23 @@
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Threading.Tasks.Extensions.dll"
     },
     {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\+PJFAUWH.gz",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\+RoLESbK.gz",
       "SourceId": "GameShop.Client",
       "SourceType": "Computed",
@@ -3619,6 +3636,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.HttpListener.dll"
+    },
+    {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\0pWQpQJ9.gz",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\1wJKfZSz.gz",
@@ -3840,6 +3874,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.FileSystemGlobbing.dll"
+    },
+    {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\69iTxzTe.gz",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\6ADdm7gd.gz",
@@ -4080,6 +4131,23 @@
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Serialization.Json.dll"
     },
     {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\93XyMB39.gz",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
+    },
+    {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\9Q1D+A4Z.gz",
       "SourceId": "GameShop.Client",
       "SourceType": "Computed",
@@ -4265,6 +4333,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.FileSystem.Watcher.dll"
+    },
+    {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\c+xRT+Bd.gz",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\cXnda2J6.gz",
@@ -4454,23 +4539,6 @@
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Threading.Overlapped.dll"
     },
     {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\fAzYD7kE.gz",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
-    },
-    {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\FbJZx6Fw.gz",
       "SourceId": "GameShop.Client",
       "SourceType": "Computed",
@@ -4503,23 +4571,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\GameShop.Client.pdb"
-    },
-    {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\fGV4qi30.gz",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\fm2LPn8n.gz",
@@ -4709,23 +4760,6 @@
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.Primitives.dll"
     },
     {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\h+Nv+VAC.gz",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
-    },
-    {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\H16UCvqM.gz",
       "SourceId": "GameShop.Client",
       "SourceType": "Computed",
@@ -4843,6 +4877,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Xml.Serialization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\J9sVaWLr.gz",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Configuration.Binder.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Binder.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Binder.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\JBgKIIa+.gz",
@@ -4996,6 +5047,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Resources.ResourceManager.dll"
+    },
+    {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\L0Q0Jlnf.gz",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\lfSVClqK.gz",
@@ -5236,23 +5304,6 @@
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.WebProxy.dll"
     },
     {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\nqB9ZhlX.gz",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll"
-    },
-    {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\NTJLHfnA.gz",
       "SourceId": "GameShop.Client",
       "SourceType": "Computed",
@@ -5268,23 +5319,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll"
-    },
-    {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\NXoF7086.gz",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\NxsBz09Z.gz",
@@ -5338,23 +5372,6 @@
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\oaopELyW.gz",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
-    },
-    {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\oD983ffn.gz",
       "SourceId": "GameShop.Client",
       "SourceType": "Computed",
@@ -5406,21 +5423,21 @@
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Xml.XmlSerializer.dll"
     },
     {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\omb+oQbN.gz",
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\OiE1Qzgc.gz",
       "SourceId": "GameShop.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
+      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
+      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll"
+      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\oRVYh3br.gz",
@@ -5593,40 +5610,6 @@
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.FileSystem.AccessControl.dll"
     },
     {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\pVpSq3pR.gz",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll"
-    },
-    {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\Px7RN9rm.gz",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/blazor.webassembly.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js"
-    },
-    {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\Qas+0L9a.gz",
       "SourceId": "GameShop.Client",
       "SourceType": "Computed",
@@ -5729,6 +5712,23 @@
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.FileExtensions.dll"
     },
     {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\qp5lvn1I.gz",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/blazor.webassembly.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js"
+    },
+    {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\QX75t85I.gz",
       "SourceId": "GameShop.Client",
       "SourceType": "Computed",
@@ -5778,6 +5778,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.Primitives.dll"
+    },
+    {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\RKPqqmiq.gz",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\rKwrPgH5.gz",
@@ -6086,23 +6103,6 @@
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.Metadata.dll"
     },
     {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\TybJny22.gz",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Configuration.Binder.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Binder.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Binder.dll"
-    },
-    {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\TzGytoMq.gz",
       "SourceId": "GameShop.Client",
       "SourceType": "Computed",
@@ -6169,6 +6169,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll"
+    },
+    {
+      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\UjIzTa+a.gz",
+      "SourceId": "GameShop.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\UQ2M1Vmt.gz",
@@ -6594,23 +6611,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.dll"
-    },
-    {
-      "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\yairCnjn.gz",
-      "SourceId": "GameShop.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Client\\obj\\Debug\\net7.0\\build-gz\\yfu7MFUO.gz",
