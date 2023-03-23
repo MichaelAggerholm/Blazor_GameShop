@@ -1,38 +1,28 @@
-name: Linter
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET
 
 on:
-  pull_request:
   push:
-    branches: [ master ]
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-
+    - uses: actions/checkout@v3
     - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '7.0.x'
-
+        dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
-
-    - name: HTML Lint
-      uses: jakejarvis/html-validate-action@v2
-      with:
-        files: ./**/*.html
-        config: .htmlvalidate.json
-
-    - name: CSS Lint
-      run: |
-        npm install stylelint stylelint-config-standard
-        npx stylelint '**/*.css'
-
     - name: Build
-      run: dotnet build --configuration Release --no-restore
-
+      run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test --no-build --verbosity normal
