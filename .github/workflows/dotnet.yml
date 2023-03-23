@@ -1,4 +1,4 @@
-name: .NET
+name: Linter
 
 on:
   pull_request:
@@ -19,6 +19,17 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore
+
+    - name: HTML Lint
+      uses: jakejarvis/html-validate-action@v2
+      with:
+        files: ./**/*.html
+        config: .htmlvalidate.json
+
+    - name: CSS Lint
+      run: |
+        npm install stylelint stylelint-config-standard
+        npx stylelint '**/*.css'
 
     - name: Build
       run: dotnet build --configuration Release --no-restore
