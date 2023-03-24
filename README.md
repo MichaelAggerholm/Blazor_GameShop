@@ -106,6 +106,16 @@ For at adskille styling fra komponentens logik og struktur. Ved at opdele CSS-ko
 CSS-separation hjælper også med at forhindre stilinterferens eller -konflikter mellem forskellige komponenter eller dele af applikationen. Det gør det muligt at definere styling specifikt for en bestemt komponent, uden at det påvirker resten af applikationen.
 CSS-separation også give mulighed for at genbruge styling på tværs af flere komponenter eller applikationer, da CSS-filen kan importeres og bruges flere steder.
 
+## ServiceResponse class
+
+Det er smart at have en ServiceResponse klasse i din .NET Core web API, fordi det hjælper med at standardisere måden, som din API kommunikerer med klienterne på. Ved at have en standard responsklasse kan du sørge for, at alle dine API-endepunkter returnerer data på en ensartet måde, uanset hvilken controller der behandler forespørgslen.
+
+Denne ensartede responsklasse hjælper også med at forenkle fejlhåndtering, da den indeholder et flag for succes og en besked, der beskriver eventuelle fejl. Dette gør det nemt for klienterne at forstå, hvad der skete, når de anmodede data fra dit API.
+
+En anden fordel ved at bruge en standard responsklasse er, at det gør det nemt at ændre dataformater i fremtiden. Hvis du beslutter dig for at ændre dataformatet på den data, du returnerer fra din API, skal du kun ændre datatypen i ServiceResponse-klassen, og alle dine klienter vil stadig kunne bruge API'et uden at skulle ændre deres kode.
+
+Generelt set er brugen af en standard ServiceResponse-klasse en god praksis for at gøre dit API mere robust, nemmere at vedligeholde og mere brugervenligt.
+
 ## Brugeridentifikation og godkendelse ??
 
 ??

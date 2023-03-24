@@ -16,12 +16,19 @@ namespace GameShop.Server.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProduct()
+        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProduct()
         {
+            // Henter en liste af produkter fra databasen asynkront og gemmer dem i variablen 'products'
             var products = await _context.Products.ToListAsync();
-            return Ok(products);
+
+            // Opretter et nyt ServiceResponse-objekt med typen 'List<Product>' og gemmer 'products' i dets Data-felt
+            var response = new ServiceResponse<List<Product>>
+            {
+                Data = products
+            };
+
+            // Returnerer en HTTP OK-statuskode sammen med det oprettede ServiceResponse-objekt
+            return Ok(response);
         }
-
-
     } 
 }

@@ -23,14 +23,19 @@
 </ul>
 
 @code{
+    // Ny privat statisk liste af Product-objekter med navnet 'Products'
     private static List<Product> Products = new List<Product>();
 
+    // Metode, der kaldes, når komponentet er initialiseret
     protected override async Task OnInitializedAsync()
     {
-        var result = await Http.GetFromJsonAsync<List<Product>>("api/Product");
-        if (result != null)
+        // Sender en GET-forespørgsel til et web-API-endepunkt og gemmer svaret i en ServiceResponse-variabel
+        var result = await Http.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/Product");
+
+        // Hvis svaret er gyldigt, og dets datafelt er sat, opdaterer vi Products-listen med den modtagne data
+        if (result != null && result.Data != null)
         {
-            Products = result;
+            Products = result.Data;
         }
     }
 }
