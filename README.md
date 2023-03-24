@@ -88,6 +88,22 @@ Produktivitet: Code-first migration kan hjælpe dig med at øge din produktivite
 
 Jeg har benyttet mig af Github til versionskontrol, da det er et gratis værktøj, som er nemt at bruge og giver mulighed for at dele koden med andre.
 
+## Github .Net workflow pipeline
+
+automatiserer bygge- og testprocessen for et .NET-projekt. Ved at automatisere disse processer bliver det muligt at opnå flere fordele:
+
+Reducerer risikoen for fejl: Automatiske testprocesser sikrer, at nye ændringer i koden ikke introducerer nye fejl eller bryder eksisterende funktionalitet. Dette hjælper med at reducere risikoen for, at koden ikke fungerer korrekt, når den er i produktion.
+
+Hurtig feedback: Automatiske testprocesser giver hurtig feedback til udviklerne, når en ændring i koden bryder testene. Dette giver mulighed for hurtigt at identificere og løse problemerne.
+
+Spar tid: Automatisering af bygge- og testprocesser sparer tid og ressourcer i forhold til manuelle processer. Dette kan give mulighed for at fokusere på andre opgaver og øge produktiviteten.
+
+Øget kvalitet: Automatiske testprocesser sikrer, at koden er testet grundigt, hvilket øger kvaliteten af den leverede software.
+
+Samarbejde: Automatiske testprocesser sikrer, at alle i teamet arbejder med samme kodebase og at deres arbejde er testet og valideret. Dette kan give mulighed for øget samarbejde og reducere risikoen for konflikter i koden.
+
+I dette tilfælde kan denne GitHub workflow bidrage til at sikre, at alle kodeændringer bliver grundigt testet og integreret i master-branchen, kun når de består alle tests. Dette hjælper med at sikre, at produktet fungerer korrekt og reducerer risikoen for fejl i produktionen.
+
 ## Microsoft.AspNetCore.Cors
 
 Microsoft.AspNetCore.Cors library integreret i web api, for at kunne håndtere CORS (Cross-Origin Resource Sharing) requests.
