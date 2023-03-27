@@ -1,41 +1,38 @@
-﻿@inject HttpClient Http
+﻿@inject IProductService ProductService
 
-<ul class="list-unstyled">
-    @foreach (var Product in Products)
-    {
-        <li class="media my-3">
-            <div class="media-img-wrapper mr-2">
-                <a href="#">
-                    <img class="media-img" src="@Product.ImageUrl" alt="@Product.Title" />
-                </a>
-            </div>
-            <div class="media-body">
-                <a href="#">
-                    <h4 class="mb-0">@Product.Title</h4>
-                </a>
-                <p>@Product.Description</p>
-                <h5 class="price">
-                    $@Product.Price
-                </h5>
-            </div>
-        </li>
-    }
-</ul>
+@if (ProductService.Products == null || ProductService.Products.Count == 0)
+{
+    <span>Indlæser produkter...</span>
+}
+else
+{
+    <ul class="list-unstyled">
+        @foreach (var Product in ProductService.Products)
+        {
+            <li class="media my-3">
+                <div class="media-img-wrapper mr-2">
+                    <a href="#">
+                        <img class="media-img" src="@Product.ImageUrl" alt="@Product.Title" />
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="#">
+                        <h4 class="mb-0">@Product.Title</h4>
+                    </a>
+                    <p>@Product.Description</p>
+                    <h5 class="price">
+                        $@Product.Price
+                    </h5>
+                </div>
+            </li>
+        }
+    </ul>
+}
 
 @code{
-    // Ny privat statisk liste af Product-objekter med navnet 'Products'
-    private static List<Product> Products = new List<Product>();
-
-    // Metode, der kaldes, når komponentet er initialiseret
+    // Ved indlæsning, hentes produkterne fra ProductService.
     protected override async Task OnInitializedAsync()
     {
-        // Sender en GET-forespørgsel til et web-API-endepunkt og gemmer svaret i en ServiceResponse-variabel
-        var result = await Http.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/Product");
-
-        // Hvis svaret er gyldigt, og dets datafelt er sat, opdaterer vi Products-listen med den modtagne data
-        if (result != null && result.Data != null)
-        {
-            Products = result.Data;
-        }
+        await ProductService.GetProductsAsync();
     }
 }
