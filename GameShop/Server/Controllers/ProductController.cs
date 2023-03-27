@@ -8,27 +8,23 @@ namespace GameShop.Server.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly DataContext _context;
+        // Her instantieres interface'et IProductService.cs, som definerer metoderne fra ProductService.cs
+        private readonly IProductService _productService;
 
-        public ProductController(DataContext context)
+        // Her injecteres interface'et IProductService.cs, som definerer metoderne fra ProductService.cs
+        public ProductController(IProductService productService)
         {
-            _context = context;
+            _productService = productService;
         }
 
         [HttpGet]
-        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProduct()
+        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProducts()
         {
-            // Henter en liste af produkter fra databasen asynkront og gemmer dem i variablen 'products'
-            var products = await _context.Products.ToListAsync();
+            // Her kaldes metoden fra ProductService.cs, som er defineret i interface'et IProductService.cs
+            var result = await _productService.GetProductsAsync();
 
-            // Opretter et nyt ServiceResponse-objekt med typen 'List<Product>' og gemmer 'products' i dets Data-felt
-            var response = new ServiceResponse<List<Product>>
-            {
-                Data = products
-            };
-
-            // Returnerer en HTTP OK-statuskode sammen med det oprettede ServiceResponse-objekt
-            return Ok(response);
+            // returnerer resultatet fra ProductService.cs
+            return Ok(result);
         }
     } 
 }

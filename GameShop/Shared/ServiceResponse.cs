@@ -8,6 +8,7 @@ namespace GameShop.Shared
 {
     public class ServiceResponse<T>
     {
+        // T er en generisk type, som kan bruges til at definere hvilken type data der skal returneres
         public T? Data { get; set; }
 
         public bool Success { get; set; } = true;

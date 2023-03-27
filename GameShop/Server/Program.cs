@@ -17,6 +17,7 @@ builder.Services.AddSwaggerGen();
 // Add services
 builder.Services.AddScoped<IProductService, ProductService>();
 
+// Add DbContext
 builder.Services.AddSqlite<DataContext>("Data Source=GameShopDb.db");
 
 var app = builder.Build();
