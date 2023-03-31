@@ -11,6 +11,23 @@
             _context = context;
         }
 
+        public async Task<ServiceResponse<Product>> GetProductAsync(Guid productId)
+        {
+            var response = new ServiceResponse<Product>();
+            var product = await _context.Products.FindAsync(productId);
+            if (product == null)
+            {
+                response.Success = false;
+                response.Message = "Dette produkt blev ikke fundet..";
+            }
+            else
+            {
+                response.Data = product;
+            }
+
+            return response;
+        }
+
         // Metode til at hente alle produkter fra GameShopDb.db og returnere dem som en liste af objekter af typen Product.cs
         public async Task<ServiceResponse<List<Product>>> GetProductsAsync()
         {

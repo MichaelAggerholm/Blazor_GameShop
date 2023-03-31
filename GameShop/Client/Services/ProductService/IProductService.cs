@@ -7,5 +7,6 @@ namespace GameShop.Client.Services.ProductService
         List<Product> Products { get; set; }
 
         Task GetProductsAsync();
+        Task<ServiceResponse<Product>> GetProductAsync(Guid productId);
     }
 }

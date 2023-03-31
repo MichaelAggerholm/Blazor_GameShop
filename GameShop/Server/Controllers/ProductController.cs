@@ -26,5 +26,16 @@ namespace GameShop.Server.Controllers
             // returnerer resultatet fra ProductService.cs
             return Ok(result);
         }
+
+        [HttpGet]
+        [Route("{productId}")]
+        public async Task<ActionResult<ServiceResponse<Product>>> GetProduct([FromRoute]Guid productId)
+        {
+            // Her kaldes metoden fra ProductService.cs, som er defineret i interface'et IProductService.cs
+            var result = await _productService.GetProductAsync(productId);
+
+            // returnerer resultatet fra ProductService.cs
+            return Ok(result);
+        }
     } 
 }
