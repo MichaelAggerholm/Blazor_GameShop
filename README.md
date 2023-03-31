@@ -141,18 +141,6 @@ Generelt set er brugen af en standard ServiceResponse-klasse en god praksis for 
 ?? mere
 Der anvendes blandt andet blazor injection i ProductList.razor, her injectes HttpClient, for at vise data fetched fra http request.
 
-## SOLID-principperne ?
-
-Single Responsibility Principle, Open/Closed Principle, Liskov Substitution Principle, Interface Segregation Principle, Dependency Inversion Principle
-
-?? Bliver de brugt i denne kode, eller bør man ikke nævne det ??
-
-NOTE:
-
-SOLID-principperne er en række designprincipper til objektorienteret programmering, der sigter mod at gøre koden mere modulær, fleksibel og genanvendelig. Disse principper er uafhængige af applikationsarkitekturen, og de kan anvendes i enhver type applikation, inklusive Blazor WebAssembly-projekter.
-
-For at overholde SOLID-principperne kan Blazor-kode opdeles i separate moduler eller komponenter, der har en enkelt ansvar og er nemme at vedligeholde og genbruge.
-
 ## REST Api principperne ?
 
 NOTE:
