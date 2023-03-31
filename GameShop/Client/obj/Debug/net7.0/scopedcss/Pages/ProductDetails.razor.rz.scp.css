@@ -6,12 +6,16 @@
 }
 
 .media-img-wrapper[b-otw3zl44il] {
-    max-width: 350px;
+    max-width: 500px;
     max-height: 500px;
     text-align: center;
 }
 
 @media (max-width: 1023.98px) {
+    .media[b-otw3zl44il] {
+        flex-direction: column;
+    }
+
     .media-img[b-otw3zl44il] {
         max-width: 300px;
     }
