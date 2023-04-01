@@ -25,5 +25,10 @@ namespace GameShop.Shared
         [Required]
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
+
+        public Category? Category { get; set; }
+
+        [ForeignKey("Category")]
+        public Guid CategoryId { get; set; }
     }
 }
