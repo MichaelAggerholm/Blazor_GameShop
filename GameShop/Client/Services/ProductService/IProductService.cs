@@ -4,9 +4,17 @@ namespace GameShop.Client.Services.ProductService
 {
     public interface IProductService
     {
+        // Event der bliver kaldt når der er ændret i listen af produkter
+        event Action ProductsChanged;
+
+        // Liste af produkter
         List<Product> Products { get; set; }
 
-        Task GetProductsAsync();
+        // Hvis der angives en categoryurl bliver den brugt, hvis ikke bliver den ikke brugt
+        // Hvis den ikke bliver brugt, bliver alle produkter hentet
+        Task GetProductsAsync(string? categoryUrl = null);
+
+        // Henter et produkt ud fra id
         Task<ServiceResponse<Product>> GetProductAsync(Guid productId);
     }
 }

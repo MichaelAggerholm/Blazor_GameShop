@@ -1,5 +1,18 @@
 ﻿@page "/"
+@page "/{categoryUrl}"
+@inject IProductService ProductService;
 
 <PageTitle>GameShop</PageTitle>
 
 <ProductList />
+
+@code {
+    [Parameter]
+    public string? CategoryUrl { get; set; } = null;
+
+    // Ved indlæsning, hentes produkterne fra ProductService.
+    protected override async Task OnParametersSetAsync()
+    {
+        await ProductService.GetProductsAsync(CategoryUrl);
+    }
+}

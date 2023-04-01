@@ -28,10 +28,12 @@ else
     [Parameter]
     public Guid Id { get; set; }
 
+    // Ved indlæsning, hentes produkterne fra ProductService.
     protected override async Task OnParametersSetAsync()
     {
         message = "Indlæser produkter..";
 
+        // ProductService.GetProductAsync(Id) returnerer en Task<ProductResult>.
         var result = await ProductService.GetProductAsync(Id);
         if(!result.Success)
         {

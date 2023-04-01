@@ -1,4 +1,5 @@
 ﻿@inject IProductService ProductService
+@implements IDisposable;
 
 @if (ProductService.Products == null || ProductService.Products.Count == 0)
 {
@@ -31,8 +32,15 @@ else
 
 @code{
     // Ved indlæsning, hentes produkterne fra ProductService.
-    protected override async Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
-        await ProductService.GetProductsAsync();
+        // StateHasChanged kaldes, når der sker ændringer i ProductService.
+        ProductService.ProductsChanged += StateHasChanged;
+    }
+
+    // Ved afslutning, fjernes eventhandleren.
+    public void Dispose()
+    {
+        ProductService.ProductsChanged -= StateHasChanged;
     }
 }
