@@ -14,16 +14,41 @@ else
         <div class="media-body">
             <h2 class="mb-0">@product.Title</h2>
             <p>@product.Description</p>
-            <h4 class="price">
-                @*$@product.Price*@
-            </h4>
+
+            @if(product.Variants != null && product.Variants.Count > 1)
+            {
+                <div class="mb-3">
+                    <select class="form-select" @bind="currentTypeId">
+                        @foreach(var variant in product.Variants)
+                        {
+                            <option value="@variant.ProductTypeId">@variant.ProductType.Name</option>
+                        }
+                    </select>
+                </div>
+            }
+
+            @if(GetSelectedVariant() != null)
+            {
+                @if(GetSelectedVariant().OriginalPrice > GetSelectedVariant().Price)
+                {
+                    <h6 class="text-muted original-price">
+                        $@GetSelectedVariant().OriginalPrice
+                    </h6>
+                }
+                <h4 class="price">
+                    $@GetSelectedVariant().Price
+                </h4>
+            }
         </div>
     </div>
 }
 
 @code {
     private Product? product = null;
+    private ProductType? selectedProductType = null;
     private string message = string.Empty;
+    // Hvis der ikke er valgt en variant, sættes currentTypeId til Guid.Empty.
+    private Guid currentTypeId = Guid.Empty;
 
     [Parameter]
     public Guid Id { get; set; }
@@ -31,7 +56,7 @@ else
     // Ved indlæsning, hentes produkterne fra ProductService.
     protected override async Task OnParametersSetAsync()
     {
-        message = "Indlæser produkter..";
+        message = "Indlæser produkt..";
 
         // ProductService.GetProductAsync(Id) returnerer en Task<ProductResult>.
         var result = await ProductService.GetProductAsync(Id);
@@ -42,6 +67,19 @@ else
         else
         {
             product = result.Data;
+
+            // Hvis der er nogle varianter, sættes currentTypeId til den første variant.
+            if(product.Variants.Count > 0)
+            {
+                currentTypeId = product.Variants[0].ProductTypeId;
+            }
         }
+    }
+
+    // Metoden returnerer den variant, der matcher currentTypeId.
+    private ProductVariant GetSelectedVariant()
+    {
+        var variant = product.Variants.FirstOrDefault(v => v.ProductTypeId == currentTypeId);
+        return variant;
     }
 }
