@@ -38,19 +38,19 @@ namespace GameShop.Server.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("08e2428a-a363-49b2-a7f3-39b21c4f154e"),
+                            Id = new Guid("9c9e8667-5d4e-4343-84ba-95acb554f778"),
                             Name = "Action",
                             Url = "action"
                         },
                         new
                         {
-                            Id = new Guid("742b2b20-e390-47ca-b1a5-a521ea46c278"),
+                            Id = new Guid("643c4f63-9afd-43d5-80ad-a3204eeebdc5"),
                             Name = "Adventure",
                             Url = "adventure"
                         },
                         new
                         {
-                            Id = new Guid("988180ee-abe7-409b-bcea-2ba532a29e99"),
+                            Id = new Guid("13564d3c-e2ef-46b3-9d78-3256e621e546"),
                             Name = "RPG",
                             Url = "rpg"
                         });
@@ -73,9 +73,6 @@ namespace GameShop.Server.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -89,30 +86,103 @@ namespace GameShop.Server.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("85b9cce8-c12f-4435-b351-272a8dc649c1"),
-                            CategoryId = new Guid("988180ee-abe7-409b-bcea-2ba532a29e99"),
+                            Id = new Guid("7cc52326-3da4-4af3-8a53-5769b42b92fb"),
+                            CategoryId = new Guid("13564d3c-e2ef-46b3-9d78-3256e621e546"),
                             Description = "World of Warcraft: The Burning Crusade is the first expansion set for the MMORPG World of Warcraft. It was released on January 16, 2007 at local midnight in Europe and North America, selling nearly 2.4 million copies on release day alone and making it, at the time, the fastest-selling PC game released at that point.",
                             ImageUrl = "https://upload.wikimedia.org/wikipedia/en/f/fc/World_of_Warcraft_The_Burning_Crusade.png?20220428192816",
-                            Price = 99m,
                             Title = "World of Warcraft: The Burning Crusade"
                         },
                         new
                         {
-                            Id = new Guid("0d769a7e-7c97-4b72-b3f3-976b9c10b669"),
-                            CategoryId = new Guid("742b2b20-e390-47ca-b1a5-a521ea46c278"),
+                            Id = new Guid("c5efb4c0-e13f-4219-bddf-cd27d0e488fe"),
+                            CategoryId = new Guid("643c4f63-9afd-43d5-80ad-a3204eeebdc5"),
                             Description = "Sid Meier's Civilization VI is a turn-based strategy 4X video game developed by Firaxis Games, published by 2K Games, and distributed by Take-Two Interactive. The mobile port was published by Aspyr Media. The latest entry into the Civilization series, it was released on Windows and macOS in October 2016, with later ports for Linux in February 2017, iOS in December 2017, Nintendo Switch in November 2018, PlayStation 4 and Xbox One in November 2019, and Android in 2020.",
                             ImageUrl = "https://upload.wikimedia.org/wikipedia/en/3/3b/Civilization_VI_cover_art.jpg?20171222223844",
-                            Price = 149m,
                             Title = "Civilization VI"
                         },
                         new
                         {
-                            Id = new Guid("6d6457b1-ac1e-438a-b567-7073547b6531"),
-                            CategoryId = new Guid("08e2428a-a363-49b2-a7f3-39b21c4f154e"),
+                            Id = new Guid("75b1f8cf-0818-4c93-9648-71d4f6d9b53b"),
+                            CategoryId = new Guid("9c9e8667-5d4e-4343-84ba-95acb554f778"),
                             Description = "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth instalment overall. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three protagonists—retired bank robber Michael De Santa, street gangster Franklin Clinton, and drug dealer and gunrunner Trevor Philips—and their attempts to commit heists while under pressure from a corrupt government agency and powerful criminals.",
                             ImageUrl = "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png?20221021000408",
-                            Price = 99m,
                             Title = "Grand Theft Auto V"
+                        });
+                });
+
+            modelBuilder.Entity("GameShop.Shared.ProductType", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("206fefc2-2894-4c93-a28e-b119d9bc9a1a"),
+                            Name = "PC"
+                        },
+                        new
+                        {
+                            Id = new Guid("7ac2fb37-46aa-478b-90a2-4f6815353f79"),
+                            Name = "Xbox"
+                        },
+                        new
+                        {
+                            Id = new Guid("c8600275-087d-4c01-a5c9-9f7f59ad9ae5"),
+                            Name = "Playstation"
+                        });
+                });
+
+            modelBuilder.Entity("GameShop.Shared.ProductVariant", b =>
+                {
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("ProductTypeId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("OriginalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("ProductId", "ProductTypeId");
+
+                    b.HasIndex("ProductTypeId");
+
+                    b.ToTable("ProductVariants");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductId = new Guid("7cc52326-3da4-4af3-8a53-5769b42b92fb"),
+                            ProductTypeId = new Guid("206fefc2-2894-4c93-a28e-b119d9bc9a1a"),
+                            OriginalPrice = 169m,
+                            Price = 99m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("c5efb4c0-e13f-4219-bddf-cd27d0e488fe"),
+                            ProductTypeId = new Guid("7ac2fb37-46aa-478b-90a2-4f6815353f79"),
+                            OriginalPrice = 0m,
+                            Price = 99m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("75b1f8cf-0818-4c93-9648-71d4f6d9b53b"),
+                            ProductTypeId = new Guid("c8600275-087d-4c01-a5c9-9f7f59ad9ae5"),
+                            OriginalPrice = 199m,
+                            Price = 119m
                         });
                 });
 
@@ -125,6 +195,30 @@ namespace GameShop.Server.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("GameShop.Shared.ProductVariant", b =>
+                {
+                    b.HasOne("GameShop.Shared.Product", "Product")
+                        .WithMany("Variants")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GameShop.Shared.ProductType", "ProductType")
+                        .WithMany()
+                        .HasForeignKey("ProductTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("ProductType");
+                });
+
+            modelBuilder.Entity("GameShop.Shared.Product", b =>
+                {
+                    b.Navigation("Variants");
                 });
 #pragma warning restore 612, 618
         }

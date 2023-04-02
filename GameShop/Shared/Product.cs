@@ -22,13 +22,11 @@ namespace GameShop.Shared
         [Required]
         public string ImageUrl { get; set; } = string.Empty;
 
-        [Required]
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal Price { get; set; }
-
         public Category? Category { get; set; }
 
         [ForeignKey("Category")]
         public Guid CategoryId { get; set; }
+
+        public List<ProductVariant> Variants { get; set; } = new List<ProductVariant>();
     }
 }
