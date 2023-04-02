@@ -14,7 +14,13 @@
         public async Task<ServiceResponse<Product>> GetProductAsync(Guid productId)
         {
             var response = new ServiceResponse<Product>();
-            var product = await _context.Products.FindAsync(productId);
+            // Lambda expression, som henter et produkt fra GameShopDb.db, som har samme Id som productId
+            // Her hentes også alle varianterne af produktet og alle produkttyperne af varianten
+            // Hvis produktet ikke findes, returneres null som default.
+            var product = await _context.Products
+                .Include(p => p.Variants)
+                .ThenInclude(v => v.ProductType)
+                .FirstOrDefaultAsync(p => p.Id == productId);
             if (product == null)
             {
                 response.Success = false;
@@ -34,7 +40,8 @@
             // Her instantieres et objekt af typen ServiceResponse.cs, som definerer metoderne til at returnere data
             var response = new ServiceResponse<List<Product>>()
             {
-                Data = await _context.Products.ToListAsync()
+                // Henter alle produkter, og inkluderer alle varianterne af produktet
+                Data = await _context.Products.Include(p => p.Variants).ToListAsync()
             };
 
             return response;
@@ -44,8 +51,11 @@
         {
             var response = new ServiceResponse<List<Product>>
             {
+                // Henter alle produkter, hvor kategorien er lig med categoryUrl, og inkluderer alle varianterne af produktet
+                // Til sidst returneres listen af produkter som et objekt af typen ServiceResponse.cs
                 Data = await _context.Products
                     .Where(p => p.Category.Url.ToLower().Equals(categoryUrl.ToLower()))
+                    .Include(p => p.Variants)
                     .ToListAsync()
             };
 
