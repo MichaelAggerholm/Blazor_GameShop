@@ -31,7 +31,7 @@ namespace GameShop.Server.Data
                 Url = "adventure"
             };
 
-            var WowBurningCrusadePcGame = new Product
+            var WowBurningCrusade = new Product
             {
                 Id = Guid.NewGuid(),
                 Title = "World of Warcraft: The Burning Crusade",
@@ -40,7 +40,7 @@ namespace GameShop.Server.Data
                 CategoryId = RpgCategory.Id
             };
 
-            var CivilizationViXboxGame = new Product
+            var CivilizationVi = new Product
             {
                 Id = Guid.NewGuid(),
                 Title = "Civilization VI",
@@ -49,7 +49,7 @@ namespace GameShop.Server.Data
                 CategoryId = AdventureCategory.Id
             };
 
-            var GtaVPsGame = new Product
+            var GtaV = new Product
             {
                 Id = Guid.NewGuid(),
                 Title = "Grand Theft Auto V",
@@ -93,31 +93,38 @@ namespace GameShop.Server.Data
             );
 
             modelBuilder.Entity<Product>().HasData(
-                WowBurningCrusadePcGame,
-                CivilizationViXboxGame,
-                GtaVPsGame
+                WowBurningCrusade,
+                CivilizationVi,
+                GtaV
             );
 
             modelBuilder.Entity<ProductVariant>().HasData(
                 new ProductVariant
                 {
-                    ProductId = WowBurningCrusadePcGame.Id,
+                    ProductId = WowBurningCrusade.Id,
                     ProductTypeId = PcGameType.Id,
                     Price = 99,
                     OriginalPrice = 169
                 },
                 new ProductVariant
                 {
-                    ProductId = CivilizationViXboxGame.Id,
+                    ProductId = CivilizationVi.Id,
                     ProductTypeId = XboxGameType.Id,
                     Price = 99,
                 },
                 new ProductVariant
                 {
-                    ProductId = GtaVPsGame.Id,
+                    ProductId = GtaV.Id,
                     ProductTypeId = PsGameType.Id,
                     Price = 119,
                     OriginalPrice = 199
+                },
+                new ProductVariant
+                {
+                    ProductId = GtaV.Id,
+                    ProductTypeId = XboxGameType.Id,
+                    Price = 139,
+                    OriginalPrice = 219
                 }
             );
         }
