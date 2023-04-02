@@ -61,5 +61,22 @@
 
             return response;
         }
+
+        // Find produkter hvor searchText indgår i produkt titlen eller hvor searchText indgår i produkt beskrivelsen. 
+        public async Task<ServiceResponse<List<Product>>> SearchProducts(string searchText)
+        {
+            var response = new ServiceResponse<List<Product>>
+            {
+                Data = await _context.Products
+                    .Where(p => p.Title.ToLower().Contains(searchText.ToLower())
+                    ||
+                    p.Description.ToLower().Contains(searchText.ToLower()))
+                    // Inkluder produktets varianter
+                    .Include(p => p.Variants)
+                    .ToListAsync()
+            };
+
+            return response;
+        }
     }
 }
