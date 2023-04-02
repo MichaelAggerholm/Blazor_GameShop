@@ -49,7 +49,16 @@ namespace GameShop.Server.Controllers
         [Route("search/{searchText}")]
         public async Task<ActionResult<ServiceResponse<List<Product>>>> SearchProducts([FromRoute] string searchText)
         {
-            var result = await _productService.SearchProducts(searchText);
+            var result = await _productService.SearchProductsAsync(searchText);
+
+            return Ok(result);
+        }
+
+        [HttpGet]
+        [Route("searchsuggestions/{searchText}")]
+        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProductSearchSuggestions([FromRoute] string searchText)
+        {
+            var result = await _productService.GetProductSearchSuggestionsAsync(searchText);
 
             return Ok(result);
         }

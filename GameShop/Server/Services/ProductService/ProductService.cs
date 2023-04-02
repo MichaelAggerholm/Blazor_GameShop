@@ -1,4 +1,7 @@
-﻿namespace GameShop.Server.Services.ProductService
+﻿using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
+
+namespace GameShop.Server.Services.ProductService
 {
     public class ProductService : IProductService
     {
@@ -63,20 +66,65 @@
         }
 
         // Find produkter hvor searchText indgår i produkt titlen eller hvor searchText indgår i produkt beskrivelsen. 
-        public async Task<ServiceResponse<List<Product>>> SearchProducts(string searchText)
+        private async Task<List<Product>> FindProductsBySearchTextAsync(string searchText)
+        {
+            return await _context.Products
+                                .Where(p => p.Title.ToLower().Contains(searchText.ToLower())
+                                ||
+                                p.Description.ToLower().Contains(searchText.ToLower()))
+                                // Inkluder produktets varianter
+                                .Include(p => p.Variants)
+                                .ToListAsync();
+        }
+
+        public async Task<ServiceResponse<List<Product>>> SearchProductsAsync(string searchText)
         {
             var response = new ServiceResponse<List<Product>>
             {
-                Data = await _context.Products
-                    .Where(p => p.Title.ToLower().Contains(searchText.ToLower())
-                    ||
-                    p.Description.ToLower().Contains(searchText.ToLower()))
-                    // Inkluder produktets varianter
-                    .Include(p => p.Variants)
-                    .ToListAsync()
+                Data = await FindProductsBySearchTextAsync(searchText)
             };
 
             return response;
+        }
+
+        public async Task<ServiceResponse<List<string>>> GetProductSearchSuggestionsAsync(string searchText)
+        {
+            var products = await FindProductsBySearchTextAsync(searchText);
+
+            List<string> result = new List<string>();
+
+            foreach(var product in products)
+            {
+                // Hvis produkt titlen indeholder searchText, tilføjes titlen til result.
+                if(product.Title.Contains(searchText, StringComparison.OrdinalIgnoreCase))
+                {
+                    result.Add(product.Title);
+                }
+
+                // lidt tricky, men gør det muligt at søge på ord i produkt beskrivelsen.
+                if(product.Description != null)
+                {
+                    // punctioation bruges til at skaffe alle ord i beskrivelsen
+                    var punctuation = product.Description.Where(char.IsPunctuation)
+                        .Distinct().ToArray();
+                    var words = product.Description.Split()
+                        .Select(s => s.Trim(punctuation));
+
+                    // Hvis searchText indeholder nogle ord som er med i en produkt beskrivelse, tilføjes de ord til result. 
+                    foreach(var word in words) 
+                    {
+                        if(word.Contains(searchText, StringComparison.OrdinalIgnoreCase)
+                            && !result.Contains(word))
+                        {
+                            result.Add(word);
+                        }
+                    }
+                }
+
+
+            }
+            
+            return new ServiceResponse<List<string>> { Data = result };
         }
     }
 }
