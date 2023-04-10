@@ -2,8 +2,8 @@ global using GameShop.Shared;
 global using System.Net.Http.Json;
 global using GameShop.Client.Services.ProductService;
 global using GameShop.Client.Services.CategoryService;
+global using Microsoft.AspNetCore.Components.Web;
 using GameShop.Client;
-using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);

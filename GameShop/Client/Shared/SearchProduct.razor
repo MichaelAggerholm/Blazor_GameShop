@@ -1,0 +1,64 @@
+﻿@inject NavigationManager NavigationManager
+@inject IProductService ProductService
+
+<div class="input-group">
+    <input @bind-value="searchText"
+           @bind-value:event="oninput"
+           type="search"
+           list="products"
+           @onkeyup="HandleSearch"
+           class="form-control"
+           placeholder="Søg.."
+           @ref="searchInput" />
+
+    <datalist id="products">
+        @foreach (var suggestion in suggestions)
+        {
+            <option>@suggestion</option>
+        }
+    </datalist>
+
+    <div class="input-group-append">
+        <button class="btn btn-primary" @onclick="SearchProducts">
+            <span class="oi oi-magnifying-glass"></span>
+        </button>
+    </div>
+</div>
+
+@code {
+    private string searchText = string.Empty;
+    // Liste af forslag til søgning
+    private List<string> suggestions = new List<string>();
+    // ElementReference er en type som bruges til at referere til et element i DOM'en
+    protected ElementReference searchInput;
+
+    // Metode der bliver kaldt når der sker en ændring i input feltet
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        // Hvis det er første gang siden bliver rendret, så skal vi fokusere på input feltet
+        if (firstRender)
+        {
+            await searchInput.FocusAsync();
+        }
+    }
+
+    // Metode der bliver kaldt når der sker en ændring i input feltet
+    public void SearchProducts()
+    {
+        // Navigerer til en ny side med søgeteksten som parameter
+        NavigationManager.NavigateTo($"search/{searchText}");
+    }
+
+    // Metode der bliver kaldt når der sker en ændring i input feltet
+    public async Task HandleSearch(KeyboardEventArgs args)
+    {
+        if (args.Key == null || args.Key.Equals("Enter"))
+        {
+            SearchProducts();
+        }
+        else if (searchText.Length > 1)
+        {
+            suggestions = await ProductService.GetProductSearchSuggestions(searchText);
+        }
+    }
+}
