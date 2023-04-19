@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z8kqKxLv4PTxwwuMs4ZNYEk1/vl+/Lv7nYHSC8ylcAklKVOixf0t1Ac828ZZaEI7EaoC6J1th4fyyn1MExPvjA==",
+  "dgSpecHash": "hgTROi6qzZWYnl3VTDVcBs9A0AUgAL7THDldzduTdicXBQIoP8W1yBITck8zU+k3YsDMwW7qL4fyUhwN95vElw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Shared\\GameShop.Shared.csproj",
+  "projectFilePath": "/home/mao/RiderProjects/Blazor_GameShop/GameShop/Shared/GameShop.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

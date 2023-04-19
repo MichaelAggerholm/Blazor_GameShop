@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Shared\\GameShop.Shared.csproj": {}
+    "/home/mao/RiderProjects/Blazor_GameShop/GameShop/Shared/GameShop.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Shared\\GameShop.Shared.csproj": {
+    "/home/mao/RiderProjects/Blazor_GameShop/GameShop/Shared/GameShop.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Shared\\GameShop.Shared.csproj",
+        "projectUniqueName": "/home/mao/RiderProjects/Blazor_GameShop/GameShop/Shared/GameShop.Shared.csproj",
         "projectName": "GameShop.Shared",
-        "projectPath": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Shared\\GameShop.Shared.csproj",
-        "packagesPath": "C:\\Users\\92agg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\92agg\\source\\repos\\GameShop\\GameShop\\Shared\\obj\\",
+        "projectPath": "/home/mao/RiderProjects/Blazor_GameShop/GameShop/Shared/GameShop.Shared.csproj",
+        "packagesPath": "/home/mao/.nuget/packages/",
+        "outputPath": "/home/mao/RiderProjects/Blazor_GameShop/GameShop/Shared/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\92agg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/mao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

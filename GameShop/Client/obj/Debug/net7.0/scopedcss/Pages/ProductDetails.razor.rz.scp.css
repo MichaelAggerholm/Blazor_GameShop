@@ -1,30 +1,30 @@
-.media-img[b-otw3zl44il] {
+.media-img[b-zysxr2twyb] {
     width: 350px;
     height: 500px;
     border-radius: 6px;
     margin: 0 10px 10px 10px;
 }
 
-.media-img-wrapper[b-otw3zl44il] {
+.media-img-wrapper[b-zysxr2twyb] {
     max-width: 500px;
     max-height: 500px;
     text-align: center;
 }
 
-.original-price[b-otw3zl44il] {
+.original-price[b-zysxr2twyb] {
     text-decoration: line-through;
 }
 
 @media (max-width: 1023.98px) {
-    .media[b-otw3zl44il] {
+    .media[b-zysxr2twyb] {
         flex-direction: column;
     }
 
-    .media-img[b-otw3zl44il] {
+    .media-img[b-zysxr2twyb] {
         max-width: 300px;
     }
 
-    .media-img-wrapper[b-otw3zl44il] {
+    .media-img-wrapper[b-zysxr2twyb] {
         width: 100%;
         height: auto;
     }

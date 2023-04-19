@@ -9,49 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = GameShop.Client
 build_property.RootNamespace = GameShop.Client
-build_property.ProjectDir = C:\Users\92agg\source\repos\GameShop\GameShop\Client\
+build_property.ProjectDir = /home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\92agg\source\repos\GameShop\GameShop\Client
+build_property.MSBuildProjectDirectory = /home/mao/RiderProjects/Blazor_GameShop/GameShop/Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/92agg/source/repos/GameShop/GameShop/Client/App.razor]
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/92agg/source/repos/GameShop/GameShop/Client/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/92agg/source/repos/GameShop/GameShop/Client/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/92agg/source/repos/GameShop/GameShop/Client/Shared/SearchProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNlYXJjaFByb2R1Y3QucmF6b3I=
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Shared/SearchProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1NlYXJjaFByb2R1Y3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/92agg/source/repos/GameShop/GameShop/Client/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/92agg/source/repos/GameShop/GameShop/Client/_Imports.razor]
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/92agg/source/repos/GameShop/GameShop/Client/Pages/ProductDetails.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbHMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-otw3zl44il
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Pages/ProductDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdERldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zysxr2twyb
 
-[C:/Users/92agg/source/repos/GameShop/GameShop/Client/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-i85fwp3lcr
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Shared/HomeButton.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0hvbWVCdXR0b24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-doxf0ryx89
 
-[C:/Users/92agg/source/repos/GameShop/GameShop/Client/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-gqdzowmb6n
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-rmen15xvyt
 
-[C:/Users/92agg/source/repos/GameShop/GameShop/Client/Shared/ProductList.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2R1Y3RMaXN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-gtjo7adxxp
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-9rm0b1sdag
+
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Shared/ProductList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1Byb2R1Y3RMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-m42gqg0z2m
+
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Shared/Shoplayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1Nob3BsYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-8jc6a4k32v
+
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Shared/ShopNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1Nob3BOYXZNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-cmh2bg99kx
