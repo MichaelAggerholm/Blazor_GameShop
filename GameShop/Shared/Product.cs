@@ -26,6 +26,8 @@ namespace GameShop.Shared
 
         [ForeignKey("Category")]
         public Guid CategoryId { get; set; }
+        
+        public bool Featured { get; set; } = false;
 
         public List<ProductVariant> Variants { get; set; } = new List<ProductVariant>();
     }

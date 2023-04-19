@@ -21,7 +21,7 @@
             // Ternary operator der tjekker om der er en categoryurl, hvis der er, bliver den brugt, hvis ikke bliver den ikke brugt
             // Hvis den ikke bliver brugt, bliver alle produkter hentet
             var result = categoryUrl == null ?
-                await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/product") :
+                await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/product/featured") :
                 await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>($"api/product/category/{categoryUrl}");
             if (result != null && result.Data != null)
             {

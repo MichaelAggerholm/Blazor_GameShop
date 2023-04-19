@@ -37,7 +37,8 @@ namespace GameShop.Server.Data
                 Title = "World of Warcraft: The Burning Crusade",
                 Description = "World of Warcraft: The Burning Crusade is the first expansion set for the MMORPG World of Warcraft. It was released on January 16, 2007 at local midnight in Europe and North America, selling nearly 2.4 million copies on release day alone and making it, at the time, the fastest-selling PC game released at that point.",
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/en/f/fc/World_of_Warcraft_The_Burning_Crusade.png?20220428192816",
-                CategoryId = RpgCategory.Id
+                CategoryId = RpgCategory.Id,
+                Featured = true
             };
 
             var CivilizationVi = new Product
