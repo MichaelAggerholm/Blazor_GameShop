@@ -19,7 +19,7 @@
     color: green;
 }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 1024px) {
     .media {
         flex-direction: column;
     }

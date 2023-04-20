@@ -5,21 +5,28 @@
 
 <PageTitle>GameShop</PageTitle>
 
-<ProductList />
+@if(SearchText == null && CategoryUrl == null)
+{
+    <FeaturedProducts />
+}
+else
+{
+    <ProductList />
+}
 
 @code {
     [Parameter]
     public string? CategoryUrl { get; set; } = null;
 
     [Parameter]
-    public string? Searchtext { get; set; } = null;
+    public string? SearchText { get; set; } = null;
 
     // Ved indlæsning, hentes produkterne fra ProductService.
     protected override async Task OnParametersSetAsync()
     {
-        if(Searchtext != null)
+        if(SearchText != null)
         {
-            await ProductService.SearchProducts(Searchtext);
+            await ProductService.SearchProducts(SearchText);
         }
         else
         {
