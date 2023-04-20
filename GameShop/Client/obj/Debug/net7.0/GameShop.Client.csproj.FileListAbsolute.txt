@@ -1677,3 +1677,4 @@ C:/Users/92agg/source/repos/GameShop/GameShop/Client/obj/Debug/net7.0/scopedcss/
 /home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/obj/Debug/net7.0/scopedcss/Shared/Shoplayout.razor.rz.scp.css
 /home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/obj/Debug/net7.0/scopedcss/Shared/ShopNavMenu.razor.rz.scp.css
 /home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/obj/Debug/net7.0/scopedcss/Shared/HomeButton.razor.rz.scp.css
+/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/obj/Debug/net7.0/scopedcss/Shared/FeaturedProducts.razor.rz.scp.css
