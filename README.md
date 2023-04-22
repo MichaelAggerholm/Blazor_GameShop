@@ -174,3 +174,21 @@ Lettere at teste: Repository pattern gør det muligt at teste applikationslogikk
 ## Sikkerhed
 
 Grundet projektet størrelse, vil det ikke påvirke ydeevnen at benytte guid frem for normalt id til produkter, dog øger det sikkerheden da det er sværere at forudsige og manipulere dem.
+
+## Data Transfer Object (DTO)
+
+det er afgørende at have en effektiv datakommunikation mellem klienten (browseren) og serveren. DTO'er er en best practice indenfor softwarearkitektur, der hjælper med at optimere denne datakommunikation ved at minimere mængden af data, der sendes frem og tilbage mellem klienten og serveren.
+
+nogle af grundene til, hvorfor det er smart at anvende DTO'er:
+
+1. Reduceret netværkstrafik: Når du sender data mellem klienten og serveren, er det vigtigt at minimere mængden af data, der sendes over netværket, da dette kan have en betydelig indvirkning på ydeevnen
+
+2. Bedre sikkerhed: DTO'er kan også bidrage til at øge sikkerheden, Ved at bruge DTO'er kan du definere og kontrollere, hvilke data der sendes mellem klienten og serveren. Dette kan hjælpe med at forhindre utilsigtet eller uautoriseret adgang til følsomme data. Ved at implementere datavalidering i dine DTO'er kan du også sikre, at de data, der sendes til serveren, er korrekte og i det forventede format.
+
+3. Separation af bekymringer: DTO'er hjælper også med at opretholde en klar adskillelse mellem klientens grænseflade og serverens forretningslogik. Ved at bruge DTO'er kan du definere de data, der sendes til klienten, baseret på klientens behov, uden at eksponere din interne forretningslogik og datastrukturer. Dette muliggør en mere fleksibel og skalérbar arkitektur, hvor ændringer i klientens krav ikke nødvendigvis påvirker serverens backend.
+
+4. Forbedret vedligeholdelse: Ved at anvende DTO'er kan du også forbedre vedligeholdelsen af dit webshop-projekt. DTO'er fungerer som kontrakter mellem klienten og serveren, og de kan nemt opdateres, hvis der er ændringer i kravene til datakommunikationen. Dette minimerer risikoen for fejl og forenkler vedligeholdelsesopgaver, da ændringer i klientens krav kan håndteres på klientens side uden at skulle ændre serverens backend-logik.
+
+5. Skalerbarhed: DTO'er kan også hjælpe med at gøre dit webshop-projekt mere skalerbart. Ved at bruge DTO'er kan du optimere datakommunikationen og reducere den overførte data, hvilket kan være afgørende, når du håndterer store mængder data eller har mange samtidige brugere. Dette kan bidrage til at forbedre ydeevnen og ressourceforbruget i din applikation, hvilket er vigtigt for at opretholde en stabil og effektiv webshop i en skalerbar produktionsmiljø.
+
+Sammenfattende er anvendelsen af DTO'er en klog beslutning i dit webshop-projekt, da de kan bidrage til at reducere netværkstrafik, øge sikkerheden, opretholde en klar adskillelse af bekymringer, forbedre vedligeholdelsesopgaver og øge skalerbarheden. Ved at implementere DTO'er kan du opnå en mere effektiv og optimal datakommunikation mellem klienten og serveren, hvilket kan bidrage til at levere en hurtig og pålidelig webshop-oplevelse til dine brugere.
