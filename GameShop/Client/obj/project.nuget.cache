@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kBlqG3vjyu6SAHDfQy60LJNtM+hnrRvGGEYokLoueiU/aScLQyf8xDehxYrl297rtjOXQ7MVx9+pHQrq9LPE+A==",
+  "dgSpecHash": "B4xW35KAjbrcVPgCk+RIs6C2YG7OGFbt1igp2bvNrMVYI0icJaCf/vRqSumDg6c4mD0gnYbUWx2OMGcB4KpZPQ==",
   "success": true,
   "projectFilePath": "/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/GameShop.Client.csproj",
   "expectedPackageFiles": [
+    "/home/mao/.nuget/packages/blazored.localstorage/4.3.0/blazored.localstorage.4.3.0.nupkg.sha512",
     "/home/mao/.nuget/packages/microsoft.aspnetcore.authorization/7.0.4/microsoft.aspnetcore.authorization.7.0.4.nupkg.sha512",
     "/home/mao/.nuget/packages/microsoft.aspnetcore.components/7.0.4/microsoft.aspnetcore.components.7.0.4.nupkg.sha512",
     "/home/mao/.nuget/packages/microsoft.aspnetcore.components.analyzers/7.0.4/microsoft.aspnetcore.components.analyzers.7.0.4.nupkg.sha512",

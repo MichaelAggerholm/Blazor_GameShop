@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LE1/4q3zesdAfCpCwLgyEpARDH3SvdnDo/HOZJsGPjpSySGMmQE/+mJjHtpWKw0ch0lrGOUeYXs5Irz5brvyXQ==",
+  "dgSpecHash": "anQGN9Asv4SzWuIrsOF+GtZtVttddyYjtj9bCJKef7YQNtT5b2OftOndCkA1+f3eq0jy4qFYHm87OP/mq7Rx5Q==",
   "success": true,
   "projectFilePath": "/home/mao/RiderProjects/Blazor_GameShop/GameShop/Server/GameShop.Server.csproj",
   "expectedPackageFiles": [
+    "/home/mao/.nuget/packages/blazored.localstorage/4.3.0/blazored.localstorage.4.3.0.nupkg.sha512",
     "/home/mao/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/mao/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/home/mao/.nuget/packages/microsoft.aspnetcore.authentication.core/2.2.0/microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

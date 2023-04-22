@@ -192,3 +192,7 @@ nogle af grundene til, hvorfor det er smart at anvende DTO'er:
 5. Skalerbarhed: DTO'er kan også hjælpe med at gøre dit webshop-projekt mere skalerbart. Ved at bruge DTO'er kan du optimere datakommunikationen og reducere den overførte data, hvilket kan være afgørende, når du håndterer store mængder data eller har mange samtidige brugere. Dette kan bidrage til at forbedre ydeevnen og ressourceforbruget i din applikation, hvilket er vigtigt for at opretholde en stabil og effektiv webshop i en skalerbar produktionsmiljø.
 
 Sammenfattende er anvendelsen af DTO'er en klog beslutning i dit webshop-projekt, da de kan bidrage til at reducere netværkstrafik, øge sikkerheden, opretholde en klar adskillelse af bekymringer, forbedre vedligeholdelsesopgaver og øge skalerbarheden. Ved at implementere DTO'er kan du opnå en mere effektiv og optimal datakommunikation mellem klienten og serveren, hvilket kan bidrage til at levere en hurtig og pålidelig webshop-oplevelse til dine brugere.
+
+## Local Storage Shopping Cart
+
+Grunden til at jeg benytter local storage til shopping cart, da det er en simpel og nem måde at gemme data i browseren, og så slipper brugeren for, miste indholdet i sin kurv, hvis de skulle lukke browseren eller tabben, og så slipper vi for at skulle gemme kurven direkte på en bruger.

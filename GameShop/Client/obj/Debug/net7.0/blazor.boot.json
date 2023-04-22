@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.LocalStorage.dll": "sha256-eXVgTw72kEn74FZgDQbLtvAmXbiZDSj5gzUnxVmwowQ=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-QP+9ib2tHpYrkwMTIkh60aO49DKTGwJBAA5RaITVGDE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-sCo2GmgrMtZQSY+teWT1XlU93C\/x75FDwL155zjC5TI=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-x+mgWzFuhFpGICdKYW5hmKJ3HUUw4GrXhMFi17T4JIM=",
@@ -199,14 +200,14 @@
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
       "GameShop.Shared.dll": "sha256-XXc0lU5D4QrG6T0WCT9OT3FToVjDnOfShlB2SRJoux8=",
-      "GameShop.Client.dll": "sha256-GHPEo+0+jbWOUqApURNMBSXsrrVnTGuBqsElUvmbyJY="
+      "GameShop.Client.dll": "sha256-47jCqw+32CpgeWpv8JMk1SNdxKlSygSppLBP4SJVIKA="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "GameShop.Shared.pdb": "sha256-cwQKDaTT+iKYwi+d3v5YZsQbrpNNExdD0jeXNvaj2yE=",
-      "GameShop.Client.pdb": "sha256-jSVdBoFN8g8PBO2ORM48nGMbQTy48\/fgmU0sVOLBruc="
+      "GameShop.Client.pdb": "sha256-ttuN65mOZqFLx\/ZnLhk6nHF7NSf5uOT0q7purNkG5WI="
     },
     "runtime": {
       "dotnet.7.0.5.t8a7yay789.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

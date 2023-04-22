@@ -212,3 +212,4 @@ C:/Users/92agg/source/repos/GameShop/GameShop/Server/bin/Debug/net7.0/runtimes/w
 /home/mao/RiderProjects/Blazor_GameShop/GameShop/Server/obj/Debug/net7.0/GameShop.Server.pdb
 /home/mao/RiderProjects/Blazor_GameShop/GameShop/Server/obj/Debug/net7.0/GameShop.Server.genruntimeconfig.cache
 /home/mao/RiderProjects/Blazor_GameShop/GameShop/Server/obj/Debug/net7.0/ref/GameShop.Server.dll
+/home/mao/RiderProjects/Blazor_GameShop/GameShop/Server/bin/Debug/net7.0/Blazored.LocalStorage.dll
