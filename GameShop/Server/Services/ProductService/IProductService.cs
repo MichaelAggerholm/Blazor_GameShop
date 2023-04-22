@@ -1,4 +1,6 @@
-﻿namespace GameShop.Server.Services.ProductService
+﻿using GameShop.Shared.DTO;
+
+namespace GameShop.Server.Services.ProductService
 {
     public interface IProductService
     {
@@ -6,7 +8,7 @@
         Task<ServiceResponse<List<Product>>> GetProductsAsync();
         Task<ServiceResponse<Product>> GetProductAsync(Guid productId);
         Task<ServiceResponse<List<Product>>> GetProductsByCategoryAsync(string categoryUrl);
-        Task<ServiceResponse<List<Product>>> SearchProductsAsync(string searchText);
+        Task<ServiceResponse<ProductSearchResult>> SearchProductsAsync(string searchText, int page);
         Task<ServiceResponse<List<string>>> GetProductSearchSuggestionsAsync(string searchText);
         Task<ServiceResponse<List<Product>>> GetFeaturedProducts();
     }

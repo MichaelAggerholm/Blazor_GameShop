@@ -1,4 +1,5 @@
 ﻿using GameShop.Server.Data;
+using GameShop.Shared.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -46,10 +47,10 @@ namespace GameShop.Server.Controllers
         }
 
         [HttpGet]
-        [Route("search/{searchText}")]
-        public async Task<ActionResult<ServiceResponse<List<Product>>>> SearchProducts([FromRoute] string searchText)
+        [Route("search/{searchText}/{page}")]
+        public async Task<ActionResult<ServiceResponse<ProductSearchResult>>> SearchProducts([FromRoute] string searchText, int page = 1)
         {
-            var result = await _productService.SearchProductsAsync(searchText);
+            var result = await _productService.SearchProductsAsync(searchText, page);
 
             return Ok(result);
         }
