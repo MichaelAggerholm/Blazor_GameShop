@@ -12,6 +12,12 @@ namespace GameShop.Client.Services.ProductService
 
         // Ineholder besked om hvis der er sket en fejl i søgning, som hvis der eksempelvis ingen produkter er fundet ved søgning.
         string Message { get; set; }
+        
+        int CurrentPage { get; set; }
+        
+        int PageCount { get; set; }
+        
+        string LastSearchText { get; set; }
 
         // Hvis der angives en categoryurl bliver den brugt, hvis ikke bliver den ikke brugt
         // Hvis den ikke bliver brugt, bliver alle produkter hentet
@@ -20,7 +26,7 @@ namespace GameShop.Client.Services.ProductService
         // Henter et produkt ud fra id
         Task<ServiceResponse<Product>> GetProductAsync(Guid productId);
 
-        Task SearchProducts(string searchText);
+        Task SearchProducts(string searchText, int page);
         Task<List<string>> GetProductSearchSuggestions(string searchText);
     }
 }

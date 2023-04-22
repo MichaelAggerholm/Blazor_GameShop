@@ -1,4 +1,6 @@
-﻿namespace GameShop.Client.Services.ProductService
+﻿using GameShop.Shared.DTO;
+
+namespace GameShop.Client.Services.ProductService
 {
     public class ProductService : IProductService
     {
@@ -14,6 +16,9 @@
         // Liste af produkter
         public List<Product> Products { get; set; } = new List<Product>();
         public string Message { get; set; } = "Indlæser produkter..";
+        public int CurrentPage { get; set; } = 1;
+        public int PageCount { get; set; } = 0;
+        public string LastSearchText { get; set; } = string.Empty;
 
         // Henter alle produkter ud fra categoryurl, hvis der ikke er en categoryurl bliver alle produkter hentet
         public async Task GetProductsAsync(string? categoryUrl = null)
@@ -26,6 +31,14 @@
             if (result != null && result.Data != null)
             {
                 Products = result.Data;
+            }
+            
+            CurrentPage = 1;
+            PageCount = 0;
+
+            if (Products.Count == 0)
+            {
+                Message = "Ingen produkter fundet.";
             }
 
             // Kald eventet der siger at der er ændret i listen af produkter
@@ -41,14 +54,16 @@
         }
 
         // Søger efter produkter ud fra søgetekst, hvis der ikke er nogle produkter fundet, bliver der sat en besked
-        public async Task SearchProducts(string searchText)
+        public async Task SearchProducts(string searchText, int page)
         {
             var result = await _http
-                .GetFromJsonAsync<ServiceResponse<List<Product>>>($"api/product/search/{searchText}");
+                .GetFromJsonAsync<ServiceResponse<ProductSearchResult>>($"api/product/search/{searchText}/{page}");
 
             if(result != null && result.Data != null)
             {
-                Products = result.Data;
+                Products = result.Data.Products;
+                CurrentPage = result.Data.CurrentPage;
+                PageCount = result.Data.Pages;
             }
             if(Products.Count == 0) 
             {
