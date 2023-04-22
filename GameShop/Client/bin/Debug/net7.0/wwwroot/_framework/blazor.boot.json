@@ -199,14 +199,14 @@
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
       "GameShop.Shared.dll": "sha256-XXc0lU5D4QrG6T0WCT9OT3FToVjDnOfShlB2SRJoux8=",
-      "GameShop.Client.dll": "sha256-xnT5Nnsiew2Y7U+RDcXfGyygZ408+T\/cMMMli0R01PY="
+      "GameShop.Client.dll": "sha256-GHPEo+0+jbWOUqApURNMBSXsrrVnTGuBqsElUvmbyJY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "GameShop.Shared.pdb": "sha256-cwQKDaTT+iKYwi+d3v5YZsQbrpNNExdD0jeXNvaj2yE=",
-      "GameShop.Client.pdb": "sha256-fSmo1em7SUyqfrjd9HGKurJsG+O9cJlX8\/QY\/3KGoW0="
+      "GameShop.Client.pdb": "sha256-jSVdBoFN8g8PBO2ORM48nGMbQTy48\/fgmU0sVOLBruc="
     },
     "runtime": {
       "dotnet.7.0.5.t8a7yay789.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

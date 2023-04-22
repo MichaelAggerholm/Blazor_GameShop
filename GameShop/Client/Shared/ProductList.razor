@@ -28,6 +28,16 @@ else
             </li>
         }
     </ul>
+
+    // Viser en knap for hver side, der kan vises.
+    for (int i = 1; i <= ProductService.PageCount; i++)
+    {
+        // Knappen er enten aktiv eller inaktiv, alt efter om den viser den aktuelle side.
+        <a class="btn @(i == ProductService.CurrentPage ? "btn-info" : "btn-outline-info") page-selection"
+           href="/search/@ProductService.LastSearchText/@i">
+            @i
+        </a>
+    }
 }
 
 @code{
@@ -44,6 +54,7 @@ else
         ProductService.ProductsChanged -= StateHasChanged;
     }
 
+    // Metoden returnerer en tekst, der beskriver prisen på produktet.
     private string GetPriceText(Product product)
     {
         var variants = product.Variants;

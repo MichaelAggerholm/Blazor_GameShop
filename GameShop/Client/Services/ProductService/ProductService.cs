@@ -56,6 +56,8 @@ namespace GameShop.Client.Services.ProductService
         // Søger efter produkter ud fra søgetekst, hvis der ikke er nogle produkter fundet, bliver der sat en besked
         public async Task SearchProducts(string searchText, int page)
         {
+            LastSearchText = searchText;
+            
             var result = await _http
                 .GetFromJsonAsync<ServiceResponse<ProductSearchResult>>($"api/product/search/{searchText}/{page}");
 
@@ -65,6 +67,7 @@ namespace GameShop.Client.Services.ProductService
                 CurrentPage = result.Data.CurrentPage;
                 PageCount = result.Data.Pages;
             }
+            
             if(Products.Count == 0) 
             {
                 Message = "Ingen produkter fundet.";

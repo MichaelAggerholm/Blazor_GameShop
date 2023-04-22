@@ -80,7 +80,10 @@ namespace GameShop.Server.Services.ProductService
 
         public async Task<ServiceResponse<ProductSearchResult>> SearchProductsAsync(string searchText, int page)
         {
+            // Angiver hvor mange resultater der skal vises per side
             var pageResults = 2f;
+            
+            // Antal sider der skal vises i pagination
             var pageCount = Math.Ceiling((await FindProductsBySearchTextAsync(searchText)).Count / pageResults);
             var products = await _context.Products
                 .Where(p => p.Title.ToLower().Contains(searchText.ToLower())

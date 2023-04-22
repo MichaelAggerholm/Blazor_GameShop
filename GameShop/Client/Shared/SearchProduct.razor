@@ -45,8 +45,8 @@
     // Metode der bliver kaldt når der sker en ændring i input feltet
     public void SearchProducts()
     {
-        // Navigerer til en ny side med søgeteksten som parameter
-        NavigationManager.NavigateTo($"search/{searchText}");
+        // Navigerer til en ny side med søgeteksten som parameter, og side 1 som default.
+        NavigationManager.NavigateTo($"search/{searchText}/1");
     }
 
     // Metode der bliver kaldt når der sker en ændring i input feltet

@@ -247,6 +247,11 @@ main[b-rmen15xvyt] {
     color: green;
 }
 
+.page-selection[b-m42gqg0z2m] {
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
 @media (max-width: 1024px) {
     .media[b-m42gqg0z2m] {
         flex-direction: column;
