@@ -82,7 +82,7 @@ namespace GameShop.Server.Services.ProductService
         {
             // Angiver hvor mange resultater der skal vises per side
             var pageResults = 2f;
-            
+
             // Antal sider der skal vises i pagination
             var pageCount = Math.Ceiling((await FindProductsBySearchTextAsync(searchText)).Count / pageResults);
             var products = await _context.Products
@@ -94,7 +94,7 @@ namespace GameShop.Server.Services.ProductService
                 .Skip((page - 1) * (int)pageResults)
                 .Take((int)pageResults)
                 .ToListAsync();
-            
+
             var response = new ServiceResponse<ProductSearchResult>
             {
                 Data = new ProductSearchResult
