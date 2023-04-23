@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Shared/CartCounter.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0NhcnRDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/Shared/SearchProduct.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1NlYXJjaFByb2R1Y3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
