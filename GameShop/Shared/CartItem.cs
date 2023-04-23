@@ -2,7 +2,7 @@ namespace GameShop.Shared;
 
 public class CartItem
 {
-    public int ProductId { get; set; }
+    public Guid ProductId { get; set; }
     
-    public int ProductTypeId { get; set; }
+    public Guid ProductTypeId { get; set; }
 }
