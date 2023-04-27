@@ -2,11 +2,11 @@ namespace GameShop.Shared.DTO;
 
 public class CartProductResponse
 {
-    public int ProductId { get; set; }
+    public Guid ProductId { get; set; }
 
     public string Title { get; set; } = string.Empty;
 
-    public int ProductTypeId { get; set; }
+    public Guid ProductTypeId { get; set; }
     
     public string ProductType { get; set; } = string.Empty;
 
