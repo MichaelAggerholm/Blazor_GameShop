@@ -3,6 +3,7 @@ global using GameShop.Server.Data;
 global using Microsoft.EntityFrameworkCore;
 global using GameShop.Server.Services.ProductService;
 global using GameShop.Server.Services.CategoryService;
+global using GameShop.Server.Services.CartService;
 using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,7 @@ builder.Services.AddSwaggerGen();
 // Add services
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ICartService, CartService>();
 
 // Add DbContext
 builder.Services.AddSqlite<DataContext>("Data Source=GameShopDb.db");
