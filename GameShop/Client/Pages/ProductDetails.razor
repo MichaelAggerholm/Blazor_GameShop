@@ -87,15 +87,19 @@ else
         return variant;
     }
 
+    // Metoden tilføjer en vare til kurven.
     private async Task AddToCart()
     {
+        // Henter den valgte variant.
         var ProductVariant = GetSelectedVariant();
+        // Opretter en CartItem med produkt id og produkt type id fra den valgte variant.
         var cartItem = new CartItem
         {
             ProductId = ProductVariant.ProductId,
             ProductTypeId = ProductVariant.ProductTypeId,
         };
 
+        // Tilføjer det nyoprettede cartitem til kurv.
         await CartService.AddToCart(cartItem);
     }
 
