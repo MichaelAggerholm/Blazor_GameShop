@@ -1,8 +1,30 @@
+@inject ICartService CartService
+@inject ISyncLocalStorageService LocalStorage
+@implements IDisposable
+
 <a href="cart" class="btn btn-info">
     <i class="oi oi-cart"></i>
-    <span class="badge">0</span>
+    <span class="badge">@GetCartItemsCount()</span>
 </a>
 
 @code {
     
+    // Metode til at hente antal varer i kurven
+    private int GetCartItemsCount()
+    {
+        var cart = LocalStorage.GetItem<List<CartItem>>("cart");
+        return cart != null ? cart.Count : 0;
+    }
+    
+    // OnInitialized bliver kaldet når komponentet bliver tilføjet til DOM
+    protected override void OnInitialized()
+    {
+        CartService.OnChange += StateHasChanged;
+    }
+    
+    // Dispose bliver kaldet når komponentet bliver fjernet fra DOM
+    public void Dispose()
+    {
+        CartService.OnChange -= StateHasChanged;
+    }
 }
