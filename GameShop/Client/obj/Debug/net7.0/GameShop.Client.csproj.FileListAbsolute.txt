@@ -1682,3 +1682,4 @@ C:/Users/92agg/source/repos/GameShop/GameShop/Client/obj/Debug/net7.0/scopedcss/
 /home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/bin/Debug/net7.0/wwwroot/_framework/Blazored.LocalStorage.dll.gz
 /home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/bin/Debug/net7.0/Blazored.LocalStorage.dll
 /home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/obj/Debug/net7.0/build-gz/vAp0At5H.gz
+/home/mao/RiderProjects/Blazor_GameShop/GameShop/Client/obj/Debug/net7.0/scopedcss/Pages/Cart.razor.rz.scp.css
