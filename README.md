@@ -2,7 +2,23 @@
 
 # GameShop
 
-Webshom lavet i blazor web assembly som personlig udviklings projekt.
+Gameshop er et spilwebshop-projekt, der er udviklet ved hjælp af .NET Core 7 og Blazor Web Assembly. Dette projekt er designet til at give brugerne en sømløs købsoplevelse til spil, der kan spilles på forskellige platforme, herunder PC, Xbox, PS4 og PS5. Projektet omfatter en web API, klient og delt modeller samt DTO'er, der fungerer på tværs af hele løsningen.
+
+Projektet har implementeret god arkitekturpraksis ved at adskille klient og server, som er med til at øge sikkerheden og forhindre angreb. Projektet benytter sig af HTTPS og HTTPS-only-cookies for at sikre, at al kommunikation mellem klient og server er krypteret. Derudover er der implementeret input validering i alle inputfelter, som forhindrer angreb som cross-site scripting og SQL-injektioner.
+
+Til kommunikation mellem SQL-databasen og serverapplikationen er der anvendt Entity Framework Core med code-first migration, hvilket betyder, at datamodellerne først defineres i koden og derefter migreres til databasen. Versionskontrol er håndteret med GitHub, som har en automatisk .NET workflow pipeline, der linter og tjekker koden ved hver merge/pull request.
+
+Projektet benytter Microsoft.AspNetCore.Cors biblioteket til at håndtere CORS-forespørgsler og har implementeret Code-behind separation i Blazor-klienten, som adskiller præsentationslaget fra logikken i komponenterne. Der er også anvendt CSS-behind separation, som adskiller stylingen fra komponenternes logik og struktur.
+
+En ServiceResponse-klasse er implementeret, hvilket hjælper med at standardisere måden, som API kommunikerer med klienten på, da den returnerer data på en ensartet måde uanset hvilken controller, der behandler forespørgslen. Derudover er der anvendt dependency injection, REST-principper, Swagger-integration, repository pattern og DTO'er i projektet.
+
+For at øge brugeroplevelsen er der implementeret en Local Storage shopping cart, som sikrer, at indholdet i shopping carten forbliver intakt for ikke-indloggede brugere.
+
+For at adskille præsentationslaget fra logikken i komponenterne benytter projektet Code-Behind separation i Blazor klienten og CSS-Behind separation, som adskiller stylingen fra komponentens logik og struktur.
+
+Endelig benytter projektet også Dependency Injection, Repository Pattern, DTO'er og en Local Storage Shopping Cart til at sikre en effektiv og sikker handling af kundekøb.
+
+Alt i alt repræsenterer projektet en omfattende og velgennemtænkt løsning til en webshop med en række teknologier og metoder, der er valgt med henblik på sikkerhed, effektivitet og enkelthed i udvikling og vedligeholdelse.
 
 # Projekt noter
 
@@ -82,7 +98,7 @@ Versionering af databasen: Ved at anvende code-first migration kan du versionere
 
 Fleksibilitet: Code-first migration giver dig mulighed for at arbejde med en bred vifte af databaser og understøtter flere forskellige databaseteknologier. Det betyder, at du kan vælge den database, der passer bedst til dit projekt, og at du kan ændre databaseplatformen senere, hvis det er nødvendigt.
 
-Produktivitet: Code-first migration kan hjælpe dig med at øge din produktivitet ved at reducere mængden af ​​kode, du skal skrive, og ved at give dig mulighed for at fokusere på at udvikle applikationen, i stedet for at skrive manuelle SQL-scripts.
+Produktivitet: Code-first migration kan hjælpe dig med at øge din produktivitet ved at reducere mængden af kode, du skal skrive, og ved at give dig mulighed for at fokusere på at udvikle applikationen, i stedet for at skrive manuelle SQL-scripts.
 
 ## Github versionskontrol
 
