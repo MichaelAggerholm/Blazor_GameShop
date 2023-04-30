@@ -18,8 +18,11 @@ else
                     <img src="@product.ImageUrl" class="image" />
                 </div>
                 <div class="name">
-                    <h5><a href="/product/@product.ProductId">@product.Title</a></h5>
+                    <h5>
+                        <a href="/product/@product.ProductId">@product.Title</a>
+                    </h5>
                     <span>@product.ProductType</span>
+                    <button class="btn-delete" @onclick="@(() => RemoveProductFromCart(product.ProductId, product.ProductTypeId))">Delete</button>
                 </div>
                 <div class="cart-product-price">
                     $@product.Price
@@ -36,7 +39,20 @@ else
     List<CartProductResponse> cartProducts = null;
     string message = "Indlæser kurv...";
     
+    
+    // Denne metode kaldes, når komponenten initialiseres.
     protected override async Task OnInitializedAsync()
+    {
+        await LoadCart();
+    }
+        
+    private async Task RemoveProductFromCart(Guid productId, Guid productTypeId)
+    {
+        await CartService.RemoveProductFromCart(productId, productTypeId);
+        await LoadCart();
+    }
+    
+    private async Task LoadCart() 
     {
         if ((await CartService.GetCartItems()).Count == 0)
         {
