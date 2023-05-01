@@ -108,4 +108,22 @@ public class CartService : ICartService
             OnChange.Invoke();
         }
     }
+
+    public async Task UpdateQuantity(CartProductResponse cartProduct)
+    {
+        var cart = await _localStorage.GetItemAsync<List<CartItem>>("cart");
+        if (cart == null)
+        {
+            return;
+        }
+
+        var cartItem = cart.Find(x => x.ProductId == cartProduct.ProductId 
+                                      && x.ProductTypeId == cartProduct.ProductTypeId);
+
+        if (cartItem != null)
+        {
+            cartItem.Quantity = cartProduct.Quantity;
+            await _localStorage.SetItemAsync("cart", cart);
+        }
+    }
 }
