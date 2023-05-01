@@ -30,9 +30,22 @@ public class CartService : ICartService
         {
             cart = new List<CartItem>();
         }
+        
+        // Tjekker om varen allerede findes i indkøbskurven
+        var sameItem = cart.FirstOrDefault(x => x.ProductId == cartItem.ProductId 
+                                                && x.ProductTypeId == cartItem.ProductTypeId);
+
+        if (sameItem == null)
+        {
+            // Tilføjer varen til indkøbskurven, hvis den ikke findes i forvejen
+            cart.Add(cartItem);
+        }
+        else
+        {
+            // Opdaterer antallet af varer
+            sameItem.Quantity += cartItem.Quantity;
+        }
     
-        // Tilføjer varen til listen
-        cart.Add(cartItem);
     
         // Gemmer listen tilbage i local storage
         await _localStorage.SetItemAsync("cart", cart);

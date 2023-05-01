@@ -56,7 +56,8 @@ public class CartService : ICartService
                 ImageUrl = product.ImageUrl,
                 Price = productVariant.Price,
                 ProductType = productVariant.ProductType.Name,
-                ProductTypeId = productVariant.ProductTypeId
+                ProductTypeId = productVariant.ProductTypeId,
+                Quantity = cartItem.Quantity
             };
             
             // Tilføj CartProductResponse til result.Data
